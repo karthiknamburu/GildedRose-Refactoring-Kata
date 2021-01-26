@@ -38,12 +38,12 @@ class GildedRose
       if item.sell_in < 0
         item.quality -= quality
       end
-    elsif item.name == "Conjured"
-      decrease_quality(item)
-      decrease_quality(item)
+    elsif item.name == "Conjured Mana Cake"
+      decrement_quality(item)
+      decrement_quality(item)
       if item.sell_in < 0
-       decrease_quality(item)
-       decrease_quality(item)
+        decrement_quality(item)
+        decrement_quality(item)
       end
     else
       decrement_quality(item)
